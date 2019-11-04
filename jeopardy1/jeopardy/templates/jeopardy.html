@@ -1,0 +1,49 @@
+<!-- Main page for web app -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Jeopardy!</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="jumbotron text-center" style="background-color:Thistle;">
+  <h1>Search Jeopardy!</h1>
+  <p>Welcome to this search page! Use the buttons below to search trivia questions</p> 
+</div>
+  
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4" style="background-color:lightsteelblue;">
+      <h3>Search by Difficulty</h3>
+      <p><form type="get" action="/value" style="margin: 0">
+		<input id="search_box" type="text" name="value" value="{{ query }}" placeholder="Search....">
+		<button id="search_submit" type="submit" >Submit</button>
+		</form></p>
+    </div>
+    <div class="col-sm-4">
+      <!-- <h3>Search by Category</h3>
+      <p><form type="get" action="/min-date" style="margin: 0">
+		<input id="search_box" type="text" name="min" value="{{ query }}" placeholder="Search Min....">
+		<button id="search_submit" type="submit" >Submit</button>
+		</form></p> -->
+    </div>
+    <div class="col-sm-4" style="background-color:lightsteelblue;">
+      <h3>Search by Air Date</h3>        
+      <p><form type="get" action="/min-date2" style="margin: 0">
+		<input id="search_box" type="text" name="min" value="{{ query }}" placeholder="Search Date yyyy-mm-dd">
+		<button id="search_submit" type="submit" >Submit</button></p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
+
+
+

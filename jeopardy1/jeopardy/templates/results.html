@@ -1,0 +1,38 @@
+
+
+
+<!doctype html>
+<html>
+    <head>
+        <script></script>
+             <script type="text/javascript" >
+                function load() {
+                     var value = {{ val | safe }};
+
+                     var elem = document.getElementById('val');
+                     // elem.innerHTML = elem.innerHTML + "<table class="">"+"<tbody>"
+                     txt = "<head><title>All the entries!</title><style>body >div{align-items: center;}</style></head><body>";
+                     txt += "<table border='1' align='center' style='border:1px solid black'>";
+                     for(var i = 0; i < value.length; i++)
+                     {
+                 
+                        txt += "<tr class='inner'><td align='center'>" + value[i].question + "</td><td align='center'>"+ value[i].id + "</td><tr>";
+                     }
+                     	txt += "</table></body>";
+                     	elem.innerHTML = txt;
+                     
+                 }
+        </script>
+    </head>
+    <body onload="load()">
+    <div id= "val">
+
+    </div>
+    </body>
+</html>
+
+<!-- for(var i = 0; i < value.length; i++)
+                     {
+                        elem.innerHTML = elem.innerHTML + "<p class='inner' id="+i+">"+ value[i].question + " "
+                        + value[i].id + "</p>" + "<br>";
+                     } -->
