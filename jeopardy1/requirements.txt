@@ -23,7 +23,7 @@ pyOpenSSL==18.0.0
 PySocks==1.6.8
 pytz==2019.1
 rake-nltk==1.0.4
-requests==2.18.4
+requests==2.20.0
 ruamel-yaml==0.15.46
 six==1.10.0
 sqlparse==0.3.0
