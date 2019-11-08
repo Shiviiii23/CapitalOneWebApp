@@ -15,7 +15,7 @@ django-google-analytics-app==4.3.7
 djangorestframework==3.10.3
 idna==2.6
 kombu==3.0.37
-nltk==3.4.1
+nltk==3.4.5
 pipenv==2018.11.26
 pycosat==0.6.3
 pycparser==2.19
